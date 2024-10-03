@@ -20,6 +20,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'total_score',
     ];
 
     /**
@@ -44,4 +45,10 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+      // Definir relación con Prediction
+      public function predictions()
+      {
+          return $this->hasMany(Prediction::class);
+      }
 }

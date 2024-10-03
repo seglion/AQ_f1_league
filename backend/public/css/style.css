@@ -1,0 +1,46 @@
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+
+.bg-custom {
+    background-color: #363842;
+}
+.text-cyan {
+    color: #22d3ee;
+}
+.hover\:text-cyan:hover {
+    color: #67e8f9;
+}
+.bg-cyan {
+    background-color: #22d3ee;
+}
+.hover\:bg-cyan:hover {
+    background-color: #06b6d4;
+}
+.border-cyan {
+    border-color: #22d3ee;
+}
+
+/* Estilos adicionales específicos de la aplicación */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.image-overlay {
+    transition: opacity 0.3s ease;
+}
+
+.image-overlay:hover {
+    opacity: 0.7;
+}
